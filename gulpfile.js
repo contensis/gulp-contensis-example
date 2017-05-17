@@ -105,7 +105,7 @@ gulp.task('test-sync', function() {
 
   return gulp.src(config.src)
     .pipe(contensisSync.transfer(options))
-    .pipe(contensisSync.sync(options, [/^site-elements\/db/, 'baz.txt']))
+    .pipe(contensisSync.sync(options, [/^site-elements\/db/]))
     .pipe(gulpContensisSync.reporter());
 
 });
